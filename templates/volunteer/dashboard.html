@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Volunteer Dashboard - Cloud Heroes Africa{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>Welcome, {{ user.name }}! 🤝</h1>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Role:</strong> Volunteer</p>
+    <p><strong>Provider:</strong> {{ user.provider }}</p>
+    
+    <div style="margin-top: 2rem;">
+        <h2>Your Classes</h2>
+        <p>Manage your assigned student groups and course materials.</p>
+        
+        <div style="margin-top: 1rem;">
+            <a href="/volunteer/classes" class="btn btn-primary">View Classes</a>
+            <a href="/volunteer/students" class="btn btn-secondary" style="margin-left: 1rem;">Student Groups</a>
+        </div>
+    </div>
+    
+    <div style="margin-top: 2rem;">
+        <h2>Class Statistics</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+            <div style="padding: 1rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #667eea; font-size: 2rem;">3</h3>
+                <p>Classes Assigned</p>
+            </div>
+            <div style="padding: 1rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #48bb78; font-size: 2rem;">45</h3>
+                <p>Students Mentored</p>
+            </div>
+            <div style="padding: 1rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #ed8936; font-size: 2rem;">92%</h3>
+                <p>Completion Rate</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

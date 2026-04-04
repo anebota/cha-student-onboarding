@@ -1,0 +1,13 @@
+{
+  "name": "cloud-heroes-africa",
+  "version": "1.0.0",
+  "description": "IAM platform for Cloud Heroes Africa",
+  "main": "src/main.py",
+  "scripts": {
+    "test": "pytest",
+    "lint": "flake8 src/"
+  },
+  "keywords": ["iam", "oauth", "entra-id", "rbac", "mfa"],
+  "author": "Cloud Heroes Africa",
+  "license": "MIT"
+}

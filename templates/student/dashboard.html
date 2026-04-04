@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Student Dashboard - Cloud Heroes Africa{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>Welcome, {{ user.name }}! 🎓</h1>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Role:</strong> Student</p>
+    <p><strong>Provider:</strong> {{ user.provider }}</p>
+    
+    <div style="margin-top: 2rem;">
+        <h2>Your Learning Journey</h2>
+        <p>Access your courses, resources, and community forums.</p>
+        
+        <div style="margin-top: 1rem;">
+            <a href="/community/forum" class="btn btn-primary">Community Forum</a>
+            <a href="/community/resources" class="btn btn-secondary" style="margin-left: 1rem;">Learning Resources</a>
+            <a href="/community/impact" class="btn btn-secondary" style="margin-left: 1rem;">Impact Dashboard</a>
+        </div>
+    </div>
+    
+    <div style="margin-top: 2rem;">
+        <h2>Quick Stats</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+            <div style="padding: 1rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #667eea; font-size: 2rem;">5</h3>
+                <p>Courses Enrolled</p>
+            </div>
+            <div style="padding: 1rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #48bb78; font-size: 2rem;">3</h3>
+                <p>Certifications</p>
+            </div>
+            <div style="padding: 1rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #ed8936; font-size: 2rem;">85%</h3>
+                <p>Progress</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}User Management - Cloud Heroes Africa{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>User Management 👥</h1>
+    <p>Manage all platform users and their roles.</p>
+    
+    <div style="margin-top: 2rem;">
+        <h2>User List</h2>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+            <thead>
+                <tr style="background: #f7fafc;">
+                    <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e2e8f0;">Name</th>
+                    <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e2e8f0;">Email</th>
+                    <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e2e8f0;">Role</th>
+                    <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e2e8f0;">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">John Doe</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">john@example.com</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">Student</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;"><span style="color: #48bb78;">Active</span></td>
+                </tr>
+                <tr>
+                    <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">Jane Smith</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">jane@example.com</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">Volunteer</td>
+                    <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;"><span style="color: #48bb78;">Active</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

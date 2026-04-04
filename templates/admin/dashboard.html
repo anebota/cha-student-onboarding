@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Portal - Cloud Heroes Africa{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>Admin Portal 🔧</h1>
+    <p><strong>Administrator:</strong> {{ user.name }}</p>
+    
+    <div style="margin-top: 2rem;">
+        <h2>Management Tools</h2>
+        <div style="margin-top: 1rem;">
+            <a href="/admin/users" class="btn btn-primary">User Management</a>
+            <a href="/admin/roles" class="btn btn-secondary" style="margin-left: 1rem;">Role Assignment</a>
+            <a href="/admin/volunteers" class="btn btn-secondary" style="margin-left: 1rem;">Volunteer Vetting</a>
+            <a href="/admin/invites" class="btn btn-secondary" style="margin-left: 1rem;">Generate Invite Codes</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

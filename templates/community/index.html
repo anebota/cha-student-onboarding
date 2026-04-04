@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Community - Cloud Heroes Africa{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>Cloud Heroes Community 🌍</h1>
+    <p>Connect, learn, and grow with fellow cloud enthusiasts across Africa.</p>
+    
+    <div style="margin-top: 2rem;">
+        <h2>Community Features</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem;">
+            <div style="padding: 1.5rem; background: #f7fafc; border-radius: 5px;">
+                <h3 style="color: #667eea;">💬 Forum</h3>
+                <p>Discuss cloud topics, ask questions, and share knowledge.</p>
+                <a href="/community/forum" class="btn btn-primary" style="margin-top: 1rem;">Visit Forum</a>
+            </div>
+            <div style="padding: 1.5rem; background: #f7fafc; border-radius: 5px;">
+                <h3 style="color: #48bb78;">📚 Resources</h3>
+                <p>Access learning materials, tutorials, and study guides.</p>
+                <a href="/community/resources" class="btn btn-secondary" style="margin-top: 1rem;">Browse Resources</a>
+            </div>
+            <div style="padding: 1.5rem; background: #f7fafc; border-radius: 5px;">
+                <h3 style="color: #ed8936;">📊 Impact</h3>
+                <p>See the collective impact of our community.</p>
+                <a href="/community/impact" class="btn btn-secondary" style="margin-top: 1rem;">View Impact</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

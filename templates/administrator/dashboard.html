@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Administrator Dashboard - Cloud Heroes Africa{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>Administrator Dashboard 👨‍💼</h1>
+    <p><strong>Name:</strong> {{ user.name }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Role:</strong> Administrator</p>
+    <p><strong>Provider:</strong> {{ user.provider }}</p>
+    
+    <div style="margin-top: 2rem;">
+        <h2>Platform Management</h2>
+        <div style="margin-top: 1rem;">
+            <a href="/admin/users" class="btn btn-primary">User Management</a>
+            <a href="/admin/roles" class="btn btn-secondary" style="margin-left: 1rem;">Role Assignment</a>
+            <a href="/admin/volunteers" class="btn btn-secondary" style="margin-left: 1rem;">Volunteer Vetting</a>
+        </div>
+    </div>
+    
+    <div style="margin-top: 2rem;">
+        <h2>System Statistics</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+            <div style="padding: 1rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #667eea; font-size: 2rem;">1,234</h3>
+                <p>Total Students</p>
+            </div>
+            <div style="padding: 1rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #48bb78; font-size: 2rem;">45</h3>
+                <p>Active Volunteers</p>
+            </div>
+            <div style="padding: 1rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #ed8936; font-size: 2rem;">89</h3>
+                <p>Donors</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Cloud Heroes Africa{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>Welcome to Cloud Heroes Africa ☁️</h1>
+    <p>Empowering the next generation of cloud professionals across Africa.</p>
+    
+    <div style="margin-top: 2rem;">
+        <h2>Our Mission</h2>
+        <p>Cloud Heroes Africa is dedicated to providing world-class cloud computing education and resources to students across the African continent.</p>
+    </div>
+    
+    <div style="margin-top: 2rem;">
+        <h2>Get Started</h2>
+        <p>Join our community of learners, educators, and supporters.</p>
+        <div style="margin-top: 1rem;">
+            <a href="/login" class="btn btn-primary">Login</a>
+            <a href="/community" class="btn btn-secondary" style="margin-left: 1rem;">Explore Community</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Four Ways to Participate</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem;">
+        <div style="padding: 1rem; background: #f7fafc; border-radius: 5px;">
+            <h3 style="color: #667eea;">🎓 Students</h3>
+            <p>Access free cloud computing courses and certifications.</p>
+        </div>
+        <div style="padding: 1rem; background: #f7fafc; border-radius: 5px;">
+            <h3 style="color: #667eea;">👨‍💼 Administrators</h3>
+            <p>Manage platform operations and user access.</p>
+        </div>
+        <div style="padding: 1rem; background: #f7fafc; border-radius: 5px;">
+            <h3 style="color: #667eea;">💝 Donors</h3>
+            <p>Support students with scholarships and resources.</p>
+        </div>
+        <div style="padding: 1rem; background: #f7fafc; border-radius: 5px;">
+            <h3 style="color: #667eea;">🤝 Volunteers</h3>
+            <p>Mentor students and contribute to the community.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

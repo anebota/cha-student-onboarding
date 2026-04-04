@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Impact Dashboard - Cloud Heroes Africa{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>Our Impact 📊</h1>
+    <p>See the difference we're making together across Africa.</p>
+    
+    <div style="margin-top: 2rem;">
+        <h2>Community Statistics</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+            <div style="padding: 1.5rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #667eea; font-size: 2.5rem;">1,234</h3>
+                <p><strong>Students Enrolled</strong></p>
+            </div>
+            <div style="padding: 1.5rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #48bb78; font-size: 2.5rem;">567</h3>
+                <p><strong>Certifications Earned</strong></p>
+            </div>
+            <div style="padding: 1.5rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #ed8936; font-size: 2.5rem;">45</h3>
+                <p><strong>Active Volunteers</strong></p>
+            </div>
+            <div style="padding: 1.5rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #9f7aea; font-size: 2.5rem;">$125K</h3>
+                <p><strong>Scholarships Awarded</strong></p>
+            </div>
+        </div>
+    </div>
+    
+    <div style="margin-top: 2rem;">
+        <h2>Countries Reached</h2>
+        <p>Our community spans across 15 African countries including South Africa, Nigeria, Kenya, Ghana, and more.</p>
+    </div>
+</div>
+{% endblock %}

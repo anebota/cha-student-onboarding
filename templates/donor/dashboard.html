@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Donor Dashboard - Cloud Heroes Africa{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h1>Welcome, {{ user.name }}! 💝</h1>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Role:</strong> Donor</p>
+    <p><strong>Provider:</strong> {{ user.provider }}</p>
+    
+    <div style="margin-top: 2rem;">
+        <h2>Your Impact</h2>
+        <p>See how your contributions are making a difference.</p>
+        
+        <div style="margin-top: 1rem;">
+            <a href="/community/impact" class="btn btn-primary">View Impact Dashboard</a>
+            <a href="/donor/donate" class="btn btn-secondary" style="margin-left: 1rem;">Make a Donation</a>
+        </div>
+    </div>
+    
+    <div style="margin-top: 2rem;">
+        <h2>Donation Summary</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+            <div style="padding: 1rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #667eea; font-size: 2rem;">$5,000</h3>
+                <p>Total Donated</p>
+            </div>
+            <div style="padding: 1rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #48bb78; font-size: 2rem;">25</h3>
+                <p>Students Supported</p>
+            </div>
+            <div style="padding: 1rem; background: #f7fafc; border-radius: 5px; text-align: center;">
+                <h3 style="color: #ed8936; font-size: 2rem;">12</h3>
+                <p>Certifications Funded</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

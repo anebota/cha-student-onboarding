@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Login - Cloud Heroes Africa{% endblock %}
+
+{% block content %}
+<div class="card" style="max-width: 600px; margin: 4rem auto;">
+    <h1>Login to Cloud Heroes Africa</h1>
+    <p>Choose your login method based on your role.</p>
+    
+    <div style="margin-top: 2rem;">
+        <h2>Students & Donors</h2>
+        <p>Login with your Google account</p>
+        <a href="/auth/google/login" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem;">
+            🔐 Login with Google
+        </a>
+    </div>
+    
+    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 2px solid #e2e8f0;">
+        <h2>Administrators & Volunteers</h2>
+        <p>Login with your Microsoft account</p>
+        <a href="/auth/entra/login" class="btn btn-secondary" style="width: 100%; text-align: center; margin-top: 1rem;">
+            🔐 Login with Microsoft
+        </a>
+    </div>
+</div>
+{% endblock %}
